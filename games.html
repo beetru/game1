@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css"></style>
+</head>
+<body class="body">	
+<div class="box">
+	
+</div>
+<div class="box2">
+	
+</div>
+<div class="box3">
+	
+</div>
+<div class="box4">
+	
+</div>
+<div class="box5">
+	
+</div>
+<div class="box6">
+	
+</div>
+<button class="mix" style="background: yellow;margin-top: 80px;">
+	Переместить
+</button>
+
+<h1>Попыток  <span class="pointer">3</span> </h1>
+
+
+
+
+
+
+
+<script type="text/javascript">
+let attemps = 3;
+
+	document.querySelector(".mix").onclick = function() {
+		document.querySelector(".box").style.left = "400px"
+		document.querySelector(".box2").style.left = "1200px"
+		document.querySelector(".box3").style.left = "800px"
+		document.querySelector(".box4").style.left = "1200px"
+		document.querySelector(".box5").style.left = "800px"
+		document.querySelector(".box6").style.left = "400px"
+
+		document.querySelector(".box").style.backgroundColor = "black"
+		document.querySelector(".box2").style.backgroundColor = "black"
+		document.querySelector(".box3").style.backgroundColor = "black"
+		document.querySelector(".box4").style.backgroundColor = "black"
+		document.querySelector(".box5").style.backgroundColor = "black"
+		document.querySelector(".box6").style.backgroundColor = "black"
+
+		document.querySelector(".box").style.backgroundImage = "url(none)"
+		document.querySelector(".box2").style.backgroundImage = "url(none)"
+		document.querySelector(".box3").style.backgroundImage = "url(none)"
+		document.querySelector(".box4").style.backgroundImage = "url(none)"
+		document.querySelector(".box5").style.backgroundImage = "url(none)"
+		document.querySelector(".box6").style.backgroundImage = "url(none)"
+	}
+		document.querySelector(".box3").onclick= function() {
+			attemps = attemps -1;
+			document.querySelector(".pointer").innerHTML = attemps;
+			alert(" не тот")
+			document.querySelector(".box3").style.backgroundImage = "url(cartinko/4.jpg)"
+			if (attemps<=0) {
+			alert("Ты проиграл!")
+				document.querySelector(".box").style.display = "none"
+				document.querySelector(".box2").style.display = "none"
+				document.querySelector(".box3").style.display = "none"
+				document.querySelector(".box4").style.display = "none"
+				document.querySelector(".box5").style.display = "none"
+				document.querySelector(".box6").style.display = "none"
+			}
+		}
+		document.querySelector(".box4").onclick= function() {
+			attemps = attemps -1;
+			document.querySelector(".pointer").innerHTML = attemps;
+			alert(" не тот")
+			document.querySelector(".box4").style.backgroundImage = "url(cartinko/5.jpg)"
+			if (attemps<=0) {
+			alert("Ты проиграл")
+				document.querySelector(".box").style.display = "none"
+				document.querySelector(".box2").style.display = "none"
+				document.querySelector(".box3").style.display = "none"
+				document.querySelector(".box4").style.display = "none"
+				document.querySelector(".box5").style.display = "none"
+				document.querySelector(".box6").style.display = "none"
+			}
+		}
+
+		document.querySelector(".box5").onclick= function() {
+			attemps = attemps -1;
+			document.querySelector(".pointer").innerHTML = attemps;
+			alert(" не тот")
+			document.querySelector(".box5").style.backgroundImage = "url(cartinko/6.jpg)"
+			if (attemps<=0) {
+			alert("Ты проиграл")
+				document.querySelector(".box").style.display = "none"
+				document.querySelector(".box2").style.display = "none"
+				document.querySelector(".box3").style.display = "none"
+				document.querySelector(".box4").style.display = "none"
+				document.querySelector(".box5").style.display = "none"
+				document.querySelector(".box6").style.display = "none"
+			}
+		}
+
+		document.querySelector(".box6").onclick= function() {
+			attemps = attemps -1;
+			document.querySelector(".pointer").innerHTML = attemps;
+			alert(" не тот")
+			document.querySelector(".box6").style.backgroundImage = "url(cartinko/7.jpg)"
+			if (attemps<=0) {
+			alert("Ты проиграл")
+				document.querySelector(".box").style.display = "none"
+				document.querySelector(".box2").style.display = "none"
+				document.querySelector(".box3").style.display = "none"
+				document.querySelector(".box4").style.display = "none"
+				document.querySelector(".box5").style.display = "none"
+				document.querySelector(".box6").style.display = "none"
+			}
+		}
+
+		document.querySelector(".box2").onclick= function() {
+			attemps = attemps -1;
+			document.querySelector(".pointer").innerHTML = attemps;
+			alert(" не тот")
+			document.querySelector(".box2").style.backgroundImage = "url(cartinko/3.jpg)"
+			if (attemps<=0) {
+			alert("Ты проиграл")
+				document.querySelector(".box").style.display = "none"
+				document.querySelector(".box2").style.display = "none"
+				document.querySelector(".box3").style.display = "none"
+				document.querySelector(".box4").style.display = "none"
+				document.querySelector(".box5").style.display = "none"
+				document.querySelector(".box6").style.display = "none"
+			}
+		}
+
+		document.querySelector(".box").onclick= function() {
+			document.querySelector(".box").style.backgroundImage = "url(cartinko/1.jpg)"
+			alert(" Ты выйграл ")
+				document.querySelector(".box2").style.display = "none"
+				document.querySelector(".box3").style.display = "none"
+				document.querySelector(".box4").style.display = "none"
+				document.querySelector(".box5").style.display = "none"
+				document.querySelector(".box6").style.display = "none"
+	}
+</script>
+</body>
+</html>
